@@ -308,14 +308,7 @@ Arsip yang perlu kamu tahu tapi biasanya tidak disentuh:
 
 ---
 
-## Submission & dokumentasi pendukung
 
-- `submission/pitch-deck-slides.md` — isi teks 10 slide pitch deck, siap salin ke Canva/PowerPoint.
-- `submission/form-answers.md` — jawaban form submission, jadi siap tempel.
-- `submission/deskripsi-singkat.md` — deskripsi singkat project.
-- `submission/pitch-draft.md` — draf narasi pitch.
-- `submission/screenshots/README.md` — panduan ambil 5 gambar screenshot untuk submission.
-- `PANDUAN-FRONTEND.md` — panduan onboarding developer yang lebih panjang.
 
 ---
 
@@ -327,7 +320,5 @@ Arsip yang perlu kamu tahu tapi biasanya tidak disentuh:
 
 ---
 
-## Lisensi
 
-Project ini dibangun untuk Hacktiv8 National Hackathon 2026 × IBM SkillsBuild. Checklis lisensi & penggunaan data pelanggan tetap berlaku sesuai ketentuan hackathon & platform yang dipakai.
 
