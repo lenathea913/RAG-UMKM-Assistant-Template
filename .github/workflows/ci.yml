@@ -1,0 +1,67 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    name: Build Next.js
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: frontend
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+
+      - name: Install dependencies
+        run: npm ci
+
+      # prebuild menjalankan scripts/sync-store.mjs otomatis —
+      # build gagal kalau knowledge-base/price-list.md tidak bisa diparse.
+      - name: Build (sinkronisasi katalog + next build)
+        run: npm run build
+
+  cek-rahasia:
+    name: Cek rahasia
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # pindai seluruh riwayat, bukan hanya file terkini
+
+      - name: Gitleaks — pindai seluruh riwayat git
+        uses: gitleaks/gitleaks-action@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: File rahasia tidak boleh ter-track
+        run: |
+          set -euo pipefail
+          if git ls-files | grep -E '(^|/)\.env\.local$|(^|/)\.env$|\.env\.(production|development)$|\.(pem|key)$|(^|/)id_rsa'; then
+            echo "::error::Ada file rahasia yang ter-commit. Hapus dari git dan putar ulang kuncinya."
+            git ls-files | grep -E '(^|/)\.env\.local$|(^|/)\.env$|\.env\.(production|development)$|\.(pem|key)$|(^|/)id_rsa'
+            exit 1
+          fi
+          echo "Tidak ada file rahasia yang ter-track."
+
+      - name: Pola rahasia umum (kerja cepat sebagai lapis kedua)
+        run: |
+          set -euo pipefail
+          pattern='ghp_[A-Za-z0-9]{30,}|github_pat_[A-Za-z0-9_]{30,}|sk-[A-Za-z0-9]{30,}|AIza[A-Za-z0-9_-]{30,}|AKIA[0-9A-Z]{16}|-----BEGIN (RSA |EC |OPENSSH )?PRIVATE KEY-----|GEMINI_API_KEY=[A-Za-z0-9_-]{20,}'
+          if grep -rInE "$pattern" \
+              --exclude-dir=node_modules --exclude-dir=.next --exclude-dir=.git \
+              --exclude=ci.yml --exclude=.env.example .; then
+            echo "::error::Ditemukan potensi rahasia (lihat baris di atas). Jangan commit — pakai .env.local atau Settings → Secrets."
+            exit 1
+          fi
+          echo "Bersih: tidak ada pola rahasia yang cocok."

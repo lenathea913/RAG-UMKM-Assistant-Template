@@ -40,6 +40,7 @@ nama toko yang hardcode di kode.
 ![Ollama](https://img.shields.io/badge/Ollama-local-lightgrey?logo=ollama)
 ![Runtime](https://img.shields.io/badge/runtime-CPU-orange?label=100%25+CPU)
 ![Build](https://img.shields.io/badge/build-passing-green?label=build)
+![CI](https://github.com/lenathea913/RAG-UMKM-Assistant-Template/actions/workflows/ci.yml/badge.svg)
 ![Chat](https://img.shields.io/badge/chat-online-green?label=Rara%20AI%20chat)
 ![Architecture](https://img.shields.io/badge/architecture-diagram-blue?logo=readme)
 
