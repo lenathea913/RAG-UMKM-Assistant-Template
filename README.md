@@ -32,7 +32,7 @@ nama toko yang hardcode di kode.
 
 ---
 
-> Tema: **Productivity & Smart Business** — Hacktiv8 National Hackathon 2026 × IBM SkillsBuild
+> Tema: **Productivity & Smart Business** 
 
 ![Next.js](https://img.shields.io/badge/Next.js-15-black?logo=nextdotjs)
 ![IBM Granite](https://img.shields.io/badge/Model-IBM%20Granite_3.3-lightgrey?logo=ibm)
