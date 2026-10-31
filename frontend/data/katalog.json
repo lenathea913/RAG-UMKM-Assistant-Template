@@ -1,0 +1,95 @@
+{
+  "priceTitle": "Daftar Harga Resmi Batik Larasati Pekalongan",
+  "priceNote": [
+    "Berlaku mulai 1 September 2026.",
+    "Harga dalam Rupiah, belum termasuk ongkir."
+  ],
+  "categories": [
+    {
+      "title": "Batik Tulis",
+      "note": "Ditulis tangan penuh · made to order 2–3 minggu",
+      "items": [
+        {
+          "name": "Mega Mendung Premium",
+          "code": "BT-MM-001",
+          "price": "Rp 1.850.000",
+          "reseller": null,
+          "img": "/aset/mega-mendung-premium.jpeg",
+          "desc": "Batik tulis · kain primissima · pewarna alami indigo",
+          "highlight": true
+        },
+        {
+          "name": "Buketan Klasik",
+          "code": "BT-BK-002",
+          "price": "Rp 1.450.000",
+          "reseller": null,
+          "img": "/aset/buketan-klasik.jpeg",
+          "desc": "Batik tulis · motif khas pesisir, warna pastel",
+          "highlight": true
+        }
+      ]
+    },
+    {
+      "title": "Batik Cap",
+      "note": "Kain katun · pewarna aman",
+      "items": [
+        {
+          "name": "Mega Mendung Cap",
+          "code": "BC-MM-101",
+          "price": "Rp 385.000",
+          "reseller": "Rp 327.250",
+          "img": "/aset/mega-mendung-cap.jpeg",
+          "desc": "Batik cap · katun primissima",
+          "highlight": true
+        },
+        {
+          "name": "Parang Rusak Cap",
+          "code": "BC-PR-102",
+          "price": "Rp 350.000",
+          "reseller": "Rp 297.500",
+          "img": "/aset/parang-rusak-cap.jpeg",
+          "desc": "Batik cap · katun, motif parang",
+          "highlight": false
+        }
+      ]
+    },
+    {
+      "title": "Ready to Wear",
+      "note": "Siap pakai · wrapping kado gratis",
+      "items": [
+        {
+          "name": "Kemeja Pria Parang Rusak",
+          "code": "RTW-KM-201",
+          "price": "Rp 425.000",
+          "reseller": "Rp 361.250",
+          "img": "/aset/kemeja-parang-rusak.jpeg",
+          "desc": "Ready to wear · ukuran M, L, XL, XXL",
+          "highlight": true
+        },
+        {
+          "name": "Dress Wanita Buketan",
+          "code": "RTW-DR-202",
+          "price": "Rp 465.000",
+          "reseller": "Rp 395.250",
+          "img": "/aset/dress-wanita-buketan.jpeg",
+          "desc": "Ready to wear · wrapping kado gratis",
+          "highlight": false
+        }
+      ]
+    }
+  ],
+  "reseller": {
+    "percent": 15,
+    "notes": [
+      "Pembelian minimal 10 pcs, boleh campur kode.",
+      "Diskon 15% dari harga reguler untuk batik cap dan ready to wear.",
+      "Batik tulis tidak termasuk program reseller."
+    ]
+  },
+  "paymentNotes": [
+    "Transfer bank (BCA, BRI, BSI) atau QRIS.",
+    "Gratis ongkir untuk pembelian di atas Rp 500.000 ke seluruh Jawa.",
+    "Gratis ongkir ke luar Jawa untuk pembelian di atas Rp 1.500.000.",
+    "Promo bundling: beli kemeja + dress dapat potongan Rp 50.000."
+  ]
+}

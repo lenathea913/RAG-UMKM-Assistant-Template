@@ -1,0 +1,103 @@
+{
+  "$deskripsi": "PROFIL TOKO — satu-satunya tempat mengatur identitas toko di seluruh aplikasi. Edit file ini lalu jalankan `npm run sync` (otomatis saat `npm run dev`/`npm run build`) supaya katalog ikut terbarui. Jangan pakai tanda koma di baris terakhir bila menghapus entri.",
+
+  "name": "Batik Larasati Pekalongan",
+  "shortName": "Batik Larasati",
+  "city": "Pekalongan",
+  "category": "Butik batik tulis & cap",
+  "tagline": "Batik tulis & cap khas pesisir Pekalongan, ditulis tangan oleh pengrajin setempat",
+  "since": "2015",
+
+  "logo": "/logo-merak.svg",
+  "background": "/aset/background.jpeg",
+
+  "theme": {
+    "primary": "#2f4470",
+    "primaryDark": "#22335c",
+    "primarySoft": "#9db4dd",
+    "primaryMist": "#d7e0f0"
+  },
+
+  "assistant": {
+    "name": "Rara",
+    "greeting": "Halo, Kak! Aku Rara, asisten Batik Larasati. Mau tanya soal produk, harga, stok, atau cara order? Aku bantu 24 jam, Kak.",
+    "suggestions": [
+      "Berapa harga Batik Tulis Mega Mendung Premium?",
+      "Cara ordernya gimana, Kak?",
+      "Gratis ongkir nggak ke luar Jawa?",
+      "Ada stok kemeja Parang Rusak XXL?"
+    ]
+  },
+
+  "admin": {
+    "whatsapp": "6287872566458",
+    "hours": "Senin–Sabtu 08.00–17.00 WIB"
+  },
+
+  "highlights": [
+    {
+      "icon": "truck",
+      "title": "Gratis ongkir",
+      "desc": "Belanja di atas Rp 500.000 se-Jawa, di atas Rp 1.500.000 luar Jawa."
+    },
+    {
+      "icon": "clock",
+      "title": "Made to order",
+      "desc": "Batik tulis ditulis tangan, selesai dalam 2–3 minggu."
+    },
+    {
+      "icon": "badge",
+      "title": "Harga reseller",
+      "desc": "Diskon 15% min. 10 pcs untuk koleksi cap & ready to wear."
+    },
+    {
+      "icon": "gift",
+      "title": "Wrapping kado",
+      "desc": "Gratis untuk koleksi ready to wear."
+    }
+  ],
+
+  "categoryNotes": {
+    "Batik Tulis": "Ditulis tangan penuh · made to order 2–3 minggu",
+    "Batik Cap": "Kain katun · pewarna aman",
+    "Ready to Wear": "Siap pakai · wrapping kado gratis"
+  },
+
+  "reseller": {
+    "percent": 15,
+    "excludeCategories": ["Batik Tulis"]
+  },
+
+  "productMeta": {
+    "BT-MM-001": {
+      "img": "/aset/mega-mendung-premium.jpeg",
+      "desc": "Batik tulis · kain primissima · pewarna alami indigo",
+      "highlight": true
+    },
+    "BT-BK-002": {
+      "img": "/aset/buketan-klasik.jpeg",
+      "desc": "Batik tulis · motif khas pesisir, warna pastel",
+      "highlight": true
+    },
+    "BC-MM-101": {
+      "img": "/aset/mega-mendung-cap.jpeg",
+      "desc": "Batik cap · katun primissima",
+      "highlight": true
+    },
+    "BC-PR-102": {
+      "img": "/aset/parang-rusak-cap.jpeg",
+      "desc": "Batik cap · katun, motif parang",
+      "highlight": false
+    },
+    "RTW-KM-201": {
+      "img": "/aset/kemeja-parang-rusak.jpeg",
+      "desc": "Ready to wear · ukuran M, L, XL, XXL",
+      "highlight": true
+    },
+    "RTW-DR-202": {
+      "img": "/aset/dress-wanita-buketan.jpeg",
+      "desc": "Ready to wear · wrapping kado gratis",
+      "highlight": false
+    }
+  }
+}

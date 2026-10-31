@@ -1,0 +1,40 @@
+# Rahasia — jangan pernah commit
+.env
+.env.local
+.env.*.local
+.langflow-key
+*.key
+GEMINI_API_KEY.txt
+*.secret
+secrets/
+credentials/
+
+# Python / Langflow lokal
+.venv/
+__pycache__/
+*.pyc
+langflow.log
+
+# Catatan: evals/eval-run-latest.json boleh di-commit (hasil eval, tanpa rahasia)
+
+# Node / Next.js
+node_modules/
+.next/
+out/
+*.tsbuildinfo
+next-env.d.ts
+
+# Backend build artifact (server chunk yang bisa ikut export env saat build)
+# Pola ini bisa muncul kalau Next.js build menyimpan route handler produksi.
+frontend/.next/
+
+# Log
+*.log
+
+# Tooling state
+.freebuff/
+
+# Preview / thumbnail hasil screenshot yang tidak perlu di repo
+screenshot*.png
+screenshot*.jpg
+preview*.png
